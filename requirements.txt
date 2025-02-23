@@ -13,6 +13,7 @@ cssutils==2.6.0
 dict2css==0.3.0
 docutils==0.18.1
 domdf-python-tools==3.6.1
+esbonio==0.16.5
 feedgen==0.9.0
 html5lib==1.1
 idna==3.7
