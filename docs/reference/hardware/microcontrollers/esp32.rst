@@ -131,7 +131,10 @@ Bend the IOREF pin and jumper to the 3.3v pin, as is done for the Genuine Arduin
 > Note:  the 100k resistor provides a voltage boost, which will result in overcurrent issues on the 
 programming track.  You can use <D PROGBOOST> to forego the 250mA trip current, or update the 
 code in MotorDriver.h
-> If the motor shield has the LMV358 op-amp, the LMV358 supply voltage could be changed to 3.3v and forego the resistors.
+
+.. image:: /_static/images/esp32/espduino-32-L298-voltage-divider.png
+  :alt: L298 motor shield - voltage divider resistors
+  :scale: 10%
 
 Using a |DCC-EX| EX-MotorShield8874
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
