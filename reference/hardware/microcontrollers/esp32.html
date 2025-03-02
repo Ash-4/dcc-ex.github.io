@@ -717,8 +717,8 @@ Instead, on the top of the <abbr title="also referred to as a 'Motor Controller'
 </section>
 <section id="additional-information-on-the-use-of-l298-clone-motor-shields">
 <h4>Additional information on the use of L298 Clone motor shields<a class="headerlink" href="#additional-information-on-the-use-of-l298-clone-motor-shields" title="Link to this heading"></a></h4>
-<p>Bend the IOREF pin and jumper to the 3.3v pin, as is done for the Genuine Arduino Motor Shield R3.|BR|
-For current sensing, bend the A0 and A1 pins.  Current sensing will use A2 and A3, but clone motor shields require modifications.|BR| &gt; Add voltage divider resistors.|BR|  <code class="docutils literal notranslate"><span class="pre">a.</span> <span class="pre">5k/20k</span> <span class="pre">MAIN</span></code> <br />    ``  5k   A0-A2`` <br />    `` 20k  GND-A2`` <br />  <code class="docutils literal notranslate"><span class="pre">b.</span> <span class="pre">5K/20K/100K</span> <span class="pre">PROG</span></code> <br />    ``  5k   A1-A3`` <br />    `` 20k  GND-A3`` <br />    <code class="docutils literal notranslate"><span class="pre">100k</span>&#160; <span class="pre">3v3-A3</span></code> <br /> &gt; The voltage divider resistor circuit is also utilizing the Schottky diodes present on pins A2 and A3 to limit ADC input voltage.|BR| &gt; Note:  the 100k resistor provides a voltage boost, which will result in overcurrent issues on the
+<p>Bend the IOREF pin and jumper to the 3.3v pin, as is done for the Genuine Arduino Motor Shield R3. <br />
+For current sensing, bend the A0 and A1 pins.  Current sensing will use A2 and A3, but clone motor shields require modifications. <br /> &gt; Add voltage divider resistors. <br />  <code class="docutils literal notranslate"><span class="pre">a.</span> <span class="pre">5k/20k</span> <span class="pre">MAIN</span></code> <br />    ``  5k   A0-A2`` <br />    `` 20k  GND-A2`` <br />  <code class="docutils literal notranslate"><span class="pre">b.</span> <span class="pre">5K/20K/100K</span> <span class="pre">PROG</span></code> <br />    ``  5k   A1-A3`` <br />    `` 20k  GND-A3`` <br />    <code class="docutils literal notranslate"><span class="pre">100k</span>&#160; <span class="pre">3v3-A3</span></code> <br /> &gt; The voltage divider resistor circuit is also utilizing the Schottky diodes present on pins A2 and A3 to limit ADC input voltage. <br /> &gt; Note:  the 100k resistor provides a voltage boost, which will result in overcurrent issues on the
 programming track.  You can use &lt;D PROGBOOST&gt; to forego the 250mA trip current, or update the
 code in MotorDriver.h</p>
 <a class="reference internal image-reference" href="../../../_images/espduino-32-L298-voltage-divider.png"><img alt="L298 motor shield - voltage divider resistors" src="../../../_images/espduino-32-L298-voltage-divider.png" style="width: 401.20000000000005px; height: 187.20000000000002px;" /></a>
@@ -747,7 +747,7 @@ code in MotorDriver.h</p>
 <p>In order to compile for the Espressif ESP32 platforms, you will need to add the board definitions to the <a class="reference internal" href="../../../ex-commandstation/advanced-setup/installation-options/arduino-ide.html"><span class="doc">Arduino IDE</span></a>. To do this, follow the instructions on the <a class="reference external" href="https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/installing.html#installing-using-arduino-ide">official Espressif guide</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>ESP32 Espressif boards package version 2.0.17 is required.|BR|
+<p>ESP32 Espressif boards package version 2.0.17 is required. <br />
 Select board:  ESP32 Dev module</p>
 </div>
 </section>
@@ -776,7 +776,7 @@ Select board:  ESP32 Dev module</p>
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f70bf024610>
+    <jinja2.runtime.BlockReference object at 0x7fb2f0e44070>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
