@@ -104,8 +104,8 @@ From top to bottom the pins are: `IO0`, `5V` (incorrectly labelled `IOREF` on th
   :scale: 10%
 
 
-Using an Arduino Motor Shield R3 or clone
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Using an Arduino Motor Shield R3
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 To avoid damaging the ESP32's analog inputs, the `IOREF` pin on must be bent outwards or cut so it will not go into the ESPDUINO-32 socket. Then use a jumper from the `3.3v` pin to `IOREF` on the |motor shield| itself.
 
 For DCC current sensing bend or cut the `A0` and `A1` pins because by default they are connected to `GPIO2` and `GPIO4` on the ESP32 which are not useable at the same time as WiFi.
@@ -114,6 +114,27 @@ Instead, on the top of the |motor shield| connect `A0` to `A2` and `A1` to `A3` 
 .. image:: /_static/images/esp32/espduino-32-motor-shield-fritzing.png
   :alt: MotorShield configuration for ESP32
   :scale: 50%
+
+Additional information on the use of L298 Clone motor shields 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Bend the IOREF pin and jumper to the 3.3v pin, as is done for the Genuine Arduino Motor Shield R3.
+|For current sensing, bend the A0 and A1 pins.  Current sensing will use A2 and A3, but clone motor shields require modifications.
+| Add voltage divider resistors.
+| a. 5k/20k MAIN 
+|         5k   A0-A2 
+|        20k  GND-A2 
+| b. 5K/20K/100K PROG 
+|         5k   A1-A3 
+|        20k  GND-A3 
+|       100k  3v3-A3
+> The voltage divider resistor circuit is also utilizing the Schottky diodes present on pins A2 and A3 to limit ADC input voltage.
+> Note:  the 100k resistor provides a voltage boost, which will result in overcurrent issues on the 
+programming track.  You can use <D PROGBOOST> to forego the 250mA trip current, or update the 
+code in MotorDriver.h
+
+.. image:: /_static/images/esp32/espduino-32-L298-voltage-divider.png
+  :alt: L298 motor shield - voltage divider resistors
+  :scale: 10%
 
 Using a |DCC-EX| EX-MotorShield8874
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
