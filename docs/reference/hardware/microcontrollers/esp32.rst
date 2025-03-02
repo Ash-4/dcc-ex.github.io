@@ -117,19 +117,18 @@ Instead, on the top of the |motor shield| connect `A0` to `A2` and `A1` to `A3` 
 
 Additional information on the use of L298 Clone motor shields 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Bend the IOREF pin and jumper to the 3.3v pin, as is done for the Genuine Arduino Motor Shield R3. 
-* For current sensing, bend the A0 and A1 pins.  Current sensing will use A2 and A3, but clone motor shields require modifications.
-.. code-block:: 
-  Add voltage divider resistors.
+Bend the IOREF pin and jumper to the 3.3v pin, as is done for the Genuine Arduino Motor Shield R3.|BR|
+For current sensing, bend the A0 and A1 pins.  Current sensing will use A2 and A3, but clone motor shields require modifications.|BR|
+``  Add voltage divider resistors.
   a. 5k/20k MAIN 
          5k   A0-A2 
         20k  GND-A2 
   b. 5K/20K/100K PROG 
          5k   A1-A3 
         20k  GND-A3 
-       100k  3v3-A3
-* The voltage divider resistor circuit is also utilizing the Schottky diodes present on pins A2 and A3 to limit ADC input voltage.
-* Note:  the 100k resistor provides a voltage boost, which will result in overcurrent issues on the 
+       100k  3v3-A3 ``
+> The voltage divider resistor circuit is also utilizing the Schottky diodes present on pins A2 and A3 to limit ADC input voltage.|BR|
+> Note:  the 100k resistor provides a voltage boost, which will result in overcurrent issues on the 
 programming track.  You can use <D PROGBOOST> to forego the 250mA trip current, or update the 
 code in MotorDriver.h
 
