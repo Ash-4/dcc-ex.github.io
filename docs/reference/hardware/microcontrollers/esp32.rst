@@ -117,9 +117,9 @@ Instead, on the top of the |motor shield| connect `A0` to `A2` and `A1` to `A3` 
 
 Additional information on the use of L298 Clone motor shields 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Bend the IOREF pin and jumper to the 3.3v pin, as is done for the Genuine Arduino Motor Shield R3.|BR|
-For current sensing, bend the A0 and A1 pins.  Current sensing will use A2 and A3, but clone motor shields require modifications.|BR|
-|_| > Add voltage divider resistors.|BR|
+Bend the IOREF pin and jumper to the 3.3v pin, as is done for the Genuine Arduino Motor Shield R3. |BR|
+For current sensing, bend the A0 and A1 pins.  Current sensing will use A2 and A3, but clone motor shields require modifications. |BR|
+|_| > Add voltage divider resistors. |BR|
 |_| |_| ``a. 5k/20k MAIN`` |BR|
 |_| |_| |_| |_| ``  5k   A0-A2`` |BR|
 |_| |_| |_| |_| `` 20k  GND-A2`` |BR|
@@ -127,7 +127,7 @@ For current sensing, bend the A0 and A1 pins.  Current sensing will use A2 and A
 |_| |_| |_| |_| ``  5k   A1-A3`` |BR|
 |_| |_| |_| |_| `` 20k  GND-A3`` |BR|
 |_| |_| |_| |_| ``100k  3v3-A3`` |BR|
-|_| > The voltage divider resistor circuit is also utilizing the Schottky diodes present on pins A2 and A3 to limit ADC input voltage.|BR|
+|_| > The voltage divider resistor circuit is also utilizing the Schottky diodes present on pins A2 and A3 to limit ADC input voltage. |BR|
 |_| > Note:  the 100k resistor provides a voltage boost, which will result in overcurrent issues on the 
 programming track.  You can use <D PROGBOOST> to forego the 250mA trip current, or update the 
 code in MotorDriver.h
@@ -167,5 +167,5 @@ In order to compile for the Espressif ESP32 platforms, you will need to add the 
 
 .. note::
   
-  ESP32 Espressif boards package version 2.0.17 is required.|BR|
+  ESP32 Espressif boards package version 2.0.17 is required. |BR|
   Select board:  ESP32 Dev module 

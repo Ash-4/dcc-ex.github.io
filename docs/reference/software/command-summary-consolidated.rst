@@ -2013,7 +2013,7 @@ To monitor one or more Arduino pins for sensor triggers, first define/edit/delet
 
   *Parameters:* |BR|
   |_| > **id:** identifier of the Sensor (0-32767) (You pick the ID & they are shared between Turnouts, Sensors and Outputs) |BR|
-  |_| > **vpin:** vpin of the input to be controlled by the sensor object For Arduino input pins, this is the same as the digital pin number. For servo inputs and I/O expanders, it is the pin number defined for the HAL device (if present), for example 164-179 for pins on the first MCP23017 GPIO expander module, and 180-195 for the second MCP23017 module.|BR|
+  |_| > **vpin:** vpin of the input to be controlled by the sensor object For Arduino input pins, this is the same as the digital pin number. For servo inputs and I/O expanders, it is the pin number defined for the HAL device (if present), for example 164-179 for pins on the first MCP23017 GPIO expander module, and 180-195 for the second MCP23017 module. |BR|
   |_| > **pullup:** one of  |BR|
   |_| |_| |_| |_| • 1=Use pull-up resistor ACTIVE=LOW  |BR|
   |_| |_| |_| |_| • 0=don't use pull-up resistor ACTIVE=HIGH
