@@ -164,6 +164,8 @@ Adding ESP32 support to the Arduino IDE
 ----------------------------------------
 
 In order to compile for the Espressif ESP32 platforms, you will need to add the board definitions to the |Arduino IDE|. To do this, follow the instructions on the `official Espressif guide <https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/installing.html#installing-using-arduino-ide>`_.
+
 .. note::
-    ESP32 Espressif boards package version 2.0.17 is required.
-    Select board:  ESP32 Dev module 
+  
+  ESP32 Espressif boards package version 2.0.17 is required.|BR|
+  Select board:  ESP32 Dev module 
