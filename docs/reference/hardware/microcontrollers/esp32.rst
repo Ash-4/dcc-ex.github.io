@@ -120,13 +120,13 @@ Additional information on the use of L298 Clone motor shields
 Bend the IOREF pin and jumper to the 3.3v pin, as is done for the Genuine Arduino Motor Shield R3.|BR|
 For current sensing, bend the A0 and A1 pins.  Current sensing will use A2 and A3, but clone motor shields require modifications.|BR|
 |_| > Add voltage divider resistors.|BR|
-|_| |_| a. 5k/20k MAIN |BR|
-|_| |_| |_| |_| 5k |_| |_|A0-A2 |BR|
-|_| |_| |_| |_|20k |_| GND-A2 |BR|
-|_| |_| b. 5K/20K/100K PROG |BR|
-|_| |_| |_| |_| 5k |_| |_|A1-A3 |BR|
-|_| |_| |_| |_|20k |_| GND-A3 |BR|
-|_| |_| |_| 100k |_| 3v3-A3 |BR|
+|_| |_| ``a. 5k/20k MAIN`` |BR|
+|_| |_| |_| |_| ``  5k   A0-A2`` |BR|
+|_| |_| |_| |_| `` 20k  GND-A2`` |BR|
+|_| |_| ``b. 5K/20K/100K PROG`` |BR|
+|_| |_| |_| |_| ``  5k   A1-A3`` |BR|
+|_| |_| |_| |_| `` 20k  GND-A3`` |BR|
+|_| |_| |_| |_| ``100k  3v3-A3`` |BR|
 |_| > The voltage divider resistor circuit is also utilizing the Schottky diodes present on pins A2 and A3 to limit ADC input voltage.|BR|
 |_| > Note:  the 100k resistor provides a voltage boost, which will result in overcurrent issues on the 
 programming track.  You can use <D PROGBOOST> to forego the 250mA trip current, or update the 
