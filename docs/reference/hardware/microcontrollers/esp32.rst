@@ -117,13 +117,13 @@ Instead, on the top of the |motor shield| connect `A0` to `A2` and `A1` to `A3` 
 
 Additional information on the use of L298 Clone motor shields 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Bend the IOREF pin and jumper to the 3.3v pin, as is done for the Genuine Arduino Motor Shield R3.
-|For current sensing, bend the A0 and A1 pins.  Current sensing will use A2 and A3, but clone motor shields require modifications.
-| Add voltage divider resistors.
-| a. 5k/20k MAIN 
+Bend the IOREF pin and jumper to the 3.3v pin, as is done for the Genuine Arduino Motor Shield R3. 
+| For current sensing, bend the A0 and A1 pins.  Current sensing will use A2 and A3, but clone motor shields require modifications.
+|  Add voltage divider resistors.
+|  a. 5k/20k MAIN 
 |         5k   A0-A2 
 |        20k  GND-A2 
-| b. 5K/20K/100K PROG 
+|  b. 5K/20K/100K PROG 
 |         5k   A1-A3 
 |        20k  GND-A3 
 |       100k  3v3-A3
