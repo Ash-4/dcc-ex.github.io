@@ -2093,7 +2093,7 @@ Outputs (Configuring the EX-CommandStation)
 -------------------------------------------
 
 .. contents:: In This Section
-    :depth: 4
+    :depth: 5
     :local:
     :class: in-this-section
 
@@ -2104,7 +2104,21 @@ Definitions and state (ACTIVE/INACTIVE) for pins are retained in EEPROM and rest
 The default is to set each defined pin to active or inactive according to its restored state. 
 However, the default behaviour can be modified so that any pin can be forced to be either active or inactive upon power-up regardless of its previous state before power-down.  
 
-To have |EX-CS| utilise one or more Arduino pins as custom outputs, first define/edit/delete output definitions using the following variation of the ``<Z>`` command:  
+To have |EX-CS| utilise one or more Arduino pins as custom outputs, first define/edit/delete output definitions using the following variation of the ``<Z>`` command, or the lowercase ``<z>`` command can be used with no pre-definition required.   
+
+|hr-dashed|
+
+.. _native-command-lower-z-vpin-activate:
+
+``<z vpin> or <z -vpin>`` - Control an output pin; no setup required
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  *Parameters for the lowercase z command:* |BR|
+  |_| > **vpin:** the pin or vpin number of the output |BR|
+  |_| |_| |_| |_| • positive vpin = ACTIVE/HIGH  |BR|
+  |_| |_| |_| |_| • negative vpin = INACTIVE/LOW
+  
+  *Response:* N/A
 
 |hr-dashed|
 
