@@ -50,5 +50,3 @@ Connecting the hardware
 For turnouts/points controlled by DCC accessory decoders, you will need to refer to the manufacturer documentation on how to connect these to your layout.
 
 For servos controlled by a servo module connected to your |EX-CS|, sufficient information should be available on the :doc:`/reference/hardware/servo-module` page.
-
-temp line
