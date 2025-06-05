@@ -235,6 +235,22 @@ When adding PCF8574s, select an unused VPin that allows a total of 8 consecutive
     - | Need to add to myAutomation.h or myHal.cpp, and |I2C| address typically needs to be configured on breakout boards
       | May need to disable default MCP23017s if 0x20/0x21 are used
 
+.. list-table:: Additional parameter PCF8574 to initialize 8 pins as output
+
+  * - initial state
+    - value
+    - Comments
+  * - High
+    - 255
+    - | 8 pins initialized High
+  * - Low
+    - 0
+    - | 8 pins initialized Low
+  * - Multiple
+    - 0b11100011
+    - | Example - Count pins High to Low
+      | 7,6,5,1,0 are High; 4,3,2 are Low
+Interrupt parameter is also required when using this initialization parameter. |BR| HAL(PCF8574, 300, 8, 0x27, -1, 255)
 ----
 
 PCA9685 PWM servo module
