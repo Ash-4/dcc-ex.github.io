@@ -20,6 +20,7 @@ Example - ROUTEs with servo based turnouts/signals on a PCA9685 servo module
   ALIAS(SIG3_STN_EX, 104)
 
   // Start up with turnouts closed and signals red
+  AUTOSTART
   CLOSE(TRN1)
   CLOSE(TRN2)
   RED(SIG1_TRN1_APP)

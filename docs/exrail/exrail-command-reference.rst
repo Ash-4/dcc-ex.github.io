@@ -3052,6 +3052,15 @@ When setting at track mode to either ``DC`` or ``DC_INV`` / ``DCX``, you must us
     SET_TRACK(B, MAIN)
     DONE
 
+    // Four tracks (On the CSB1: A and B have better low range current sense.
+    //                        Keep one of those as PROG; use C and D as MAIN.)
+    AUTOSTART
+    SET_TRACK(A, MAIN)
+    SET_TRACK(B, PROG)
+    SET_TRACK(C, MAIN)
+    SET_TRACK(D, MAIN)
+    DONE
+
     // Set track A to be a DC track with loco ID 1, and track B to be a DCC programming track
     AUTOSTART
     SETLOCO(1) SET_TRACK(A, DC)

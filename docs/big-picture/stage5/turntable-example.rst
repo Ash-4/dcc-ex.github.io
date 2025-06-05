@@ -10,6 +10,7 @@ Example - Turntable ROUTEs
 .. code-block:: cpp
 
   // On startup, ensure our turntable moves automatically to the first position
+  AUTOSTART
   MOVETT(600, 114, Turn)
   DONE
 

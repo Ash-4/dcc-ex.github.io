@@ -28,6 +28,7 @@ Example - ROUTEs with DCC accessory turnouts and signals on Mega2560 direct I/O 
   SIGNAL(SIG3_STN_EX, 37, 38)
 
   // Start up with turnouts/points closed and signals red
+  AUTOSTART
   CLOSE(TRN1)
   CLOSE(TRN2)
   RED(SIG1_TRN1_APP)
