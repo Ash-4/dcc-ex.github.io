@@ -125,7 +125,7 @@ Also allows joining the MAIN and PROG tracks together.
 .. _native-command-j-l:
 
 ``<J L screen startRow> <JL screen startRow>`` - LCD/OLED Display track status
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   *Response:* example <JL 0 8> |BR|
   |_| <@ 0 8 "A: MAIN  361mA"> |BR|

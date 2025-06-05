@@ -250,7 +250,9 @@ When adding PCF8574s, select an unused VPin that allows a total of 8 consecutive
     - 0b11100011
     - | Example - Count pins High to Low
       | 7,6,5,1,0 are High; 4,3,2 are Low
-Interrupt parameter is also required when using this initialization parameter. |BR| HAL(PCF8574, 300, 8, 0x27, -1, 255)
+Interrupt parameter is also required when using this initialization parameter. |BR|
+|_| HAL(PCF8574, 300, 8, 0x27, -1, 255)
+
 ----
 
 PCA9685 PWM servo module
