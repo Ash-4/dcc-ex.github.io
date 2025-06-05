@@ -28,6 +28,7 @@ Example - ROUTEs with turnouts/signals on MCP23017 I/O expander Vpins
   SIGNAL(SIG3_STN_EX, 179, 180)
 
   // Start up with turnouts/points closed and signals red
+  AUTOSTART
   CLOSE(TRN1)
   CLOSE(TRN2)
   RED(SIG1_TRN1_APP)

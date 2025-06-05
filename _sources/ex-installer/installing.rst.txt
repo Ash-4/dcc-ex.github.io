@@ -554,7 +554,7 @@ The tracks (channels) on your motor driver can be configured in a variety of dif
 * ``EXT``
 * ``NONE``
 
-If the Command Station is configured as a booster (ESP32 microcontrollers only), then the channels can asl be configured as:
+If the Command Station is configured as a booster (ESP32 microcontrollers only), then the channels can also be configured as:
 
 * ``BOOST`` - Booster mode 
 * ``BOOST_INV`` - Booster mode inverted

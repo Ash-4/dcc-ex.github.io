@@ -335,6 +335,7 @@ If we omit that first ``DONE``, EXRAIL would automatically execute ``ROUTE(1, "M
     .. code-block:: cpp
 
       // Start up with turnouts/points closed and signals red
+      AUTOSTART
       CLOSE(TRN1)
       CLOSE(TRN2)
       RED(SIG1_TRN1_APP)
@@ -480,6 +481,7 @@ Once these activities have been done, we can tell our trains to start following 
     .. code-block:: cpp
 
       // Start up with turnouts/points closed and signals red
+      AUTOSTART
       CLOSE(TRN1)
       CLOSE(TRN2)
       RED(SIG1_TRN1_APP)

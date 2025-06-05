@@ -104,8 +104,8 @@ Also allows joining the MAIN and PROG tracks together.
 ``<J I> <JI>`` - Request current status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  *Response:* Repeated for each Channel/Track: ``<j I track current>`` |BR|
-  |_| > **track:**  channel/track |BR|
+  *Response:* |BR|
+  |_| Values for each Channel/Track: ``<j I current current . . .>`` |BR|
   |_| > **current:** current in milliamps
 
 |hr-dashed|
@@ -116,9 +116,33 @@ Also allows joining the MAIN and PROG tracks together.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   *Response:* |BR|
-  |_| repeated for each Channel/Track: ``<j G track currentmax>`` |BR|
+  |_| Values for each Channel/Track: ``<j G currentmax currentmax . . .>`` |BR|
   |_| > **track:**  channel/track |BR|
   |_| > **currentmax:** current in milliamps
+
+|hr-dashed|
+
+.. _native-command-j-l:
+
+``<J L screen startRow> <JL screen startRow>`` - LCD/OLED Display track status
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  *Response:* example <JL 0 8> |BR|
+  |_| <@ 0 8 "A: MAIN  361mA"> |BR|
+  |_| <@ 0 9 "B: PROG  0mA"> |BR|
+  |_| <@ 0 10 "C: DC 304"> |BR|
+  |_| <@ 0 11 "D: DC 305  0mA"> |BR|
+  |_| <@ 0 12 "4 Districts  361mA"> |BR|
+
+  status for each Channel/Track: |BR|
+  |_| > track mode |BR|
+  |_| > locoID for DC mode tracks |BR|
+  |_| > current in milliamps is only reported for tracks with power ON |BR|
+  |_| |_| current in milliamps is a trailing average  |BR|
+
+  <JL ..> command is designed for use in EXRAIL automation  |BR|
+  add the define in config.h if more than 8 rows are used  |BR|
+  |_|  #define MAX_CHARACTER_ROWS 13
 
 ----
 

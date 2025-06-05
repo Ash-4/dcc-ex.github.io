@@ -711,7 +711,7 @@ The device will only be polled when the MCP23017 pulls INTA or INTB (and hence p
 A single Arduino pin may be shared by multiple modules by commoning together the INT* pins from each module.</p>
 </dd>
 <dt>PCF8574::create(firstVpin, 8, 0x23); <em>— OR —</em> PCF8574 device1(firstVpin, 8, 0x23);</dt><dd><p>Create an instance of a HAL I/O driver for an PCF8574 GPIO Extender with 8 inputs/outputs, on I<sup>2</sup>C address 0x23.
-[An interrupt pin may be specified as for MCP23017.]</p>
+[An interrupt pin may be specified as for MCP23017. Another parameter can define the 8 pins as output and their initial state.]</p>
 </dd>
 <dt>MCP23008::create(firstVpin, 8, 0x21);  <em>— OR —</em>   MCP23008 device1(firstVpin, 8, 0x21);</dt><dd><p>Create an instance of a HAL I/O driver for an MCP23008 GPIO Extender with 8 inputs/outputs (numbered from
 firstVpin to firstVpin+7), on I<sup>2</sup>C address 0x21.
@@ -1156,7 +1156,7 @@ servo’s range.</p></li>
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f71e989a830>
+    <jinja2.runtime.BlockReference object at 0x7f057f5947c0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

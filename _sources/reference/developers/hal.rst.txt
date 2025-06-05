@@ -115,7 +115,7 @@ MCP23017::create(firstVpin, 16, 0x20, 40); *--- OR ---* MCP23017 device1(firstVp
 
 PCF8574::create(firstVpin, 8, 0x23); *--- OR ---* PCF8574 device1(firstVpin, 8, 0x23);
   Create an instance of a HAL I/O driver for an PCF8574 GPIO Extender with 8 inputs/outputs, on |I2C| address 0x23.  
-  [An interrupt pin may be specified as for MCP23017.]
+  [An interrupt pin may be specified as for MCP23017. Another parameter can define the 8 pins as output and their initial state.]
 
 MCP23008::create(firstVpin, 8, 0x21);  *--- OR ---*   MCP23008 device1(firstVpin, 8, 0x21);
   Create an instance of a HAL I/O driver for an MCP23008 GPIO Extender with 8 inputs/outputs (numbered from 

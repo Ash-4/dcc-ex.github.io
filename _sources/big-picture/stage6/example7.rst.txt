@@ -43,6 +43,7 @@ Example - Full automation with servo based turnouts/points and signals with a PC
   SERVO_SIGNAL(SIG3_STN_EX, 400, 250, 100)
 
   // Start up with turnouts/points closed and signals red
+  AUTOSTART
   CLOSE(TRN1)
   CLOSE(TRN2)
   RED(SIG1_TRN1_APP)

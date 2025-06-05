@@ -2703,6 +2703,15 @@ always considered a stop.  The exact aspect codes to be used must be determined 
 <span class="n">SET_TRACK</span><span class="p">(</span><span class="n">B</span><span class="p">,</span><span class="w"> </span><span class="n">MAIN</span><span class="p">)</span>
 <span class="n">DONE</span>
 
+<span class="c1">// Four tracks (On the CSB1: A and B have better low range current sense.</span>
+<span class="c1">//                        Keep one of those as PROG; use C and D as MAIN.)</span>
+<span class="n">AUTOSTART</span>
+<span class="n">SET_TRACK</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">MAIN</span><span class="p">)</span>
+<span class="n">SET_TRACK</span><span class="p">(</span><span class="n">B</span><span class="p">,</span><span class="w"> </span><span class="n">PROG</span><span class="p">)</span>
+<span class="n">SET_TRACK</span><span class="p">(</span><span class="n">C</span><span class="p">,</span><span class="w"> </span><span class="n">MAIN</span><span class="p">)</span>
+<span class="n">SET_TRACK</span><span class="p">(</span><span class="n">D</span><span class="p">,</span><span class="w"> </span><span class="n">MAIN</span><span class="p">)</span>
+<span class="n">DONE</span>
+
 <span class="c1">// Set track A to be a DC track with loco ID 1, and track B to be a DCC programming track</span>
 <span class="n">AUTOSTART</span>
 <span class="n">SETLOCO</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">SET_TRACK</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">DC</span><span class="p">)</span>
@@ -3162,7 +3171,7 @@ always considered a stop.  The exact aspect codes to be used must be determined 
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f71e198ece0>
+    <jinja2.runtime.BlockReference object at 0x7f058072b970>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
