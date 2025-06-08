@@ -117,7 +117,6 @@ Also allows joining the MAIN and PROG tracks together.
 
   *Response:* |BR|
   |_| Values for each Channel/Track: ``<j G currentmax currentmax . . .>`` |BR|
-  |_| > **track:**  channel/track |BR|
   |_| > **currentmax:** current in milliamps
 
 |hr-dashed|
@@ -138,11 +137,12 @@ Also allows joining the MAIN and PROG tracks together.
   |_| > track mode |BR|
   |_| > locoID for DC mode tracks |BR|
   |_| > current in milliamps is only reported for tracks with power ON |BR|
-  |_| |_| current in milliamps is a trailing average  |BR|
+  |_| |_| |_| current in milliamps is a trailing average  |BR|
 
   <JL ..> command is designed for use in EXRAIL automation  |BR|
+  |_| |_| |_| see myTrackStatus.example.h |BR|
   add the define in config.h if more than 8 rows are used  |BR|
-  |_|  #define MAX_CHARACTER_ROWS 13
+  |_| |_| |_| #define MAX_CHARACTER_ROWS 13
 
 ----
 
